@@ -7,19 +7,115 @@
 			My GitHub Page
 		</title>
 		
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta 
+		http-equiv="Content-type" 
+		content="
+		text/html; 
+		charset=utf-8;
+		"
+		>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		
 		<style>
+			body {
+				color: #999966;
+				background-color: black;
+			}
+			
+			header,footer {
+				background-color: #FFCC99;
+			}
+			details {
+				background-color: gray;
+				color: white;
+			}
 			h1 {
 				text-align: center;
 				color: #0099FF;
 				text-shadow: 2px 2px #000099;
 			}
+			h1:hover {
+				color: FF9900;
+				background-color: yellow;
+			}
+			h1::first-letter {
+				color: #ff0000;
+				font-size: xx-large;
+			}
+			footer {
+				text-align: center;
+			}
+			footer p {
+				text-align: right;
+			}
+			nav {
+				text-align: right;
+				background-color: #009999;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Hello'Û›' World'›'!</h1>
+		<header>
+			Up here.
+			<h1 charset='windows-1251'>Hello'Û›' World'›'!</h1>
+		</header>
+		<nav>
+			<b>Going through.</b> 
+			<a 
+			href='#' 
+			title='to noWhere'
+			>(navigation links)</a>
+		</nav>
+		<main>
+			the main content of a document
+			<section>
+				Separate section of
+				<h1 >
+					Hello'&#1091;&#1069;' World'&#1069;'!
+				</h1>
+				<!-- 
+				Char	Dec	Hex
+				”	1059	0423
+				Û	1091	0443
+				›	1069	042D
+				˝	1101	044D -->
+			</section>
+			<article>
+				Main article
+				<p>Brothers <mark>birthDay</mark> <time datetime="2014-07-31">2014-07-31</time>.</p>
+			</article>
+			<aside>
+				Some aside text
+			</aside>
+			<figure>
+				
+				<img 
+				src="" 
+				alt="Picture of some thing" 
+				width="300" 
+				height="200">
+				<figcaption>
+					named caption for depicted something (pretending to be an image)
+				</figcaption>
+			</figure>
+			<details>
+				<summary>
+					Yes, we are.
+				</summary>
+				Alexander Glukhovtsev aka GlulkAlex
+			</details>
+		</main>
+		<footer>
+			Down there
+			<p>Posted by: Alex Glukhovtsev</p>
+			<p>Contact information: 
+				<a 
+				href="mailto:alexanderglulkhovtsev@gmail.com"
+				>
+					alexanderglulkhovtsev@gmail.com
+				</a>.
+			</p>
+		</footer>
 	</body>
 </html>
